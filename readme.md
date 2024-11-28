@@ -31,9 +31,9 @@ Tabla 1: Funciones de la ALU.
 |`110-` | $A \vee B$ | $Y=0$ |
 |`111-` | $A \wedge B$ | $Y=0$ |
 
-*Notas*:  *Sel* es la entrada de selección, de 4 bit. *A* y *B* son los operandos, de 32 bit. *Y* es el resultado, de 32 bit y *Z* es la salida de cero, de un bit. Los operadores '$<<$' y '$>>$' denotan desplazamiento a la izquierda y desplazamiento a la derecha respectivamente. Los operadores '$=$' y '$<$' denotan las operaciones relacionales *igual a* y *menor que*, que evalúan a $1$ si se cumple la condición y $0$ en caso contrario.
+*Notas*:  *Sel* es la entrada de selección, de 4 bit. *A* y *B* son los operandos, de 32 bit. *Y* es el resultado, de 32 bit y *Z* es la salida de cero, de un bit. Los operadores ' $<<$ ' y ' $>>$ ' denotan desplazamiento a la izquierda y desplazamiento a la derecha respectivamente. Los operadores ' $=$ ' y ' $<$ ' denotan las operaciones relacionales *igual a* y *menor que*, que evalúan a $1$ si se cumple la condición y $0$ en caso contrario.
 
-- Describir en VHDL y evaluar mediante simulación las siguientes memorias:
+- Describir en verilog y evaluar mediante simulación las siguientes memorias:
   - Memoria RAM de dos puertos de 256x32 bit donde el puerto de escritura permite de media palabra (16 bit) y byte (8 bit).
   - Conjunto de registros de 32x32 bit de tres puertos, dos de lectura y uno de escritura. El registro cero será de solo lectura y su valor será siempre '0'.
 
@@ -46,7 +46,7 @@ Tabla 1: Funciones de la ALU.
 - Utilizando los bloques desarrollados diseñar un datapath multiciclo que permita implementar el conjunto de instrucciones RV32I.  Diseñar los bloques de valor inmediato, control ALU y condición branch de acuerdo a lo estudiado anteriormente sobre dicho conjunto de instrucciones. Utilizar la figura 1 como referencia.
 - Determinar las operaciones necesarias para la implementación en el datapath diseñado de las operaciones RV32I `lw`, `sw` y las de codigos de operación 19, 51, 99, 103 y 111.
 - Diseñar una unidad de control (máquina de estado finito) capaz de ejecutar las instrucciones mencionadas en el apartado anterior.
-- Realizar la descripción de hardware en VHDL de un procesador conformado por el datapath y control diseñados. La Figura 1 muestra un diagrama esquemático ilustrativo del diseño final esperado.
+- Realizar la descripción de hardware en Verilog de un procesador conformado por el datapath y control diseñados. La Figura 1 muestra un diagrama esquemático ilustrativo del diseño final esperado.
 - Evaluar mediante simulación el desempeño del procesador desarrollado utilizando el programa de prueba del Listado 1 (dado en ensamblador y código máquina).
 
 Listado 1: Listado del programa de prueba.
