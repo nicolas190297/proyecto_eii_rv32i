@@ -68,6 +68,16 @@ Figura 1: Diagrama esquemático del diseño final esperado
 
 ![Diagrama esquemático del diseño final esperado](diagrama_esquematico.svg)
 
+## Entorno de trabajo
+
+Este proyecto incluye un Makefile que automatiza las tareas. Requiere tener instalado make para usar el makefila; icarus verilog para simular; yosys y netlistsvg para generar diagramas.
+
+Para crear archivos verilog para un nuevo módulo usar `make nuevo_<modulo>` donde `<modulo>` es el nombre del nuevo módulo. Esto creará `src/<modulo>.v` conteniendo la descripción de una compuerta and de dos entradas y `src/sim_<modulo>.v` con su simulación. Luego pueden modificarse estos archivos para contener el diseño y la simulación deseados.
+
+Para correr la simulación de un módulo utilizar `make sim_<modulo>`. Esto compilará la simulación en `src/sim_<modulo>.v`, guardando el resultado en `build/modulo` y la ejecutará guardando la salida producida en la carpeta `resultados`.
+
+Para sintetizar un diseño y crear el diagrama esquemático del resultado utilizar `make diagrama_<modulo>`. El esquemático resultante será guardado en `resultados/<modulo>.svg`.
+
 ## Entregables
 
 Las descripciones de hardware y bancos de prueba realizados. Usar este repositorio como base y añadirlos dento del subdirectorio `src`.
