@@ -33,9 +33,9 @@
      inkscape:document-units="mm"
      showgrid="true"
      showguides="false"
-     inkscape:zoom="0.5052024"
-     inkscape:cx="875.88657"
-     inkscape:cy="576.00676"
+     inkscape:zoom="4.0416192"
+     inkscape:cx="510.81012"
+     inkscape:cy="576.00677"
      inkscape:window-width="1920"
      inkscape:window-height="974"
      inkscape:window-x="-11"
@@ -53,12 +53,6 @@
   </sodipodi:namedview>
   <defs
      id="defs2">
-    <rect
-       x="555.59058"
-       y="287.24408"
-       width="30.236219"
-       height="7.5590553"
-       id="rect5442" />
     <rect
        x="555.59058"
        y="287.24408"
@@ -89,12 +83,6 @@
        width="30.236219"
        height="7.5590553"
        id="rect8310" />
-    <rect
-       x="555.59058"
-       y="287.24408"
-       width="30.236219"
-       height="7.5590553"
-       id="rect10931" />
     <rect
        x="555.59058"
        y="287.24408"
@@ -290,14 +278,6 @@
          d="M 26.999998,19 H 21.999999"
          id="path6480"
          sodipodi:nodetypes="cc" />
-      <text
-         xml:space="preserve"
-         transform="matrix(0.26458333,0,0,0.26458333,-117,-51)"
-         id="text6490"
-         style="font-size:6.66667px;line-height:1.55;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans, Normal';text-align:end;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect6494);display:inline;fill:#000000;stroke-width:1.33333;stroke-linejoin:bevel;-inkscape-stroke:none;paint-order:stroke markers fill;stop-color:#000000"><tspan
-           x="555.58984"
-           y="301.90204"
-           id="tspan1894">s</tspan></text>
     </g>
     <g
        id="g6565"
@@ -322,14 +302,6 @@
          d="M 27.999998,19 H 21.999999"
          id="path6559"
          sodipodi:nodetypes="cc" />
-      <text
-         xml:space="preserve"
-         transform="matrix(0.26458333,0,0,0.26458333,-117,-51)"
-         id="text6563"
-         style="font-size:6.66667px;line-height:1.55;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans, Normal';text-align:end;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect6567);display:inline;fill:#000000;stroke-width:1.33333;stroke-linejoin:bevel;-inkscape-stroke:none;paint-order:stroke markers fill;stop-color:#000000"><tspan
-           x="555.58984"
-           y="301.90204"
-           id="tspan1896">s</tspan></text>
     </g>
     <g
        id="g6665"
@@ -354,14 +326,6 @@
          d="M 26.999998,19 H 21.999999"
          id="path6657"
          sodipodi:nodetypes="cc" />
-      <text
-         xml:space="preserve"
-         transform="matrix(0.26458333,0,0,0.26458333,-117,-51)"
-         id="text6661"
-         style="font-size:6.66667px;line-height:1.55;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans, Normal';text-align:end;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect6667);display:inline;fill:#000000;stroke-width:1.33333;stroke-linejoin:bevel;-inkscape-stroke:none;paint-order:stroke markers fill;stop-color:#000000"><tspan
-           x="555.58984"
-           y="301.90204"
-           id="tspan1898">s</tspan></text>
       <path
          id="path6663"
          style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke markers fill"
@@ -1115,14 +1079,6 @@
            style="stroke-width:0.352778"
            x="24.999996"
            y="18">32</tspan></text>
-      <text
-         xml:space="preserve"
-         transform="matrix(0.26458333,0,0,0.26458333,-117,-51)"
-         id="text7636"
-         style="font-size:6.66667px;line-height:1.55;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans, Normal';text-align:end;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect7640);display:inline;fill:#000000;stroke-width:1.33333;stroke-linejoin:bevel;-inkscape-stroke:none;paint-order:stroke markers fill;stop-color:#000000"><tspan
-           x="555.58984"
-           y="301.90204"
-           id="tspan1900">s</tspan></text>
     </g>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-linejoin:round;paint-order:stroke markers fill"
@@ -1184,14 +1140,6 @@
            style="stroke-width:0.352778"
            x="29"
            y="10">7:0</tspan></text>
-      <text
-         xml:space="preserve"
-         transform="matrix(0.26458333,0,0,0.26458333,-117,-51)"
-         id="text8306"
-         style="font-size:6.66667px;line-height:1.55;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans, Normal';text-align:end;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect8310);display:inline;fill:#000000;stroke-width:1.33333;stroke-linejoin:bevel;-inkscape-stroke:none;paint-order:stroke markers fill;stop-color:#000000"><tspan
-           x="555.58984"
-           y="301.90204"
-           id="tspan1902">s</tspan></text>
     </g>
     <g
        id="g9116"
@@ -1527,14 +1475,6 @@
            style="text-align:end;text-anchor:end;stroke-width:0.352778"
            x="25"
            y="9">31:0</tspan></text>
-      <text
-         xml:space="preserve"
-         transform="matrix(0.26458333,0,0,0.26458333,-117,-51)"
-         id="text10989"
-         style="font-size:6.66667px;line-height:1.55;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans, Normal';text-align:end;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect11011);display:inline;fill:#000000;stroke-width:1.33333;stroke-linejoin:bevel;-inkscape-stroke:none;paint-order:stroke markers fill;stop-color:#000000"><tspan
-           x="555.58984"
-           y="301.90204"
-           id="tspan1904">s</tspan></text>
       <path
          style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke markers fill"
          d="M 33.021534,16 H 27.021537"
@@ -2113,14 +2053,6 @@
            style="stroke-width:0.352778"
            x="29"
            y="15.5">31:7</tspan></text>
-      <text
-         xml:space="preserve"
-         transform="matrix(0.26458333,0,0,0.26458333,-117,-51)"
-         id="text13749"
-         style="font-size:6.66667px;line-height:1.55;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans, Normal';text-align:end;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect13753);display:inline;fill:#000000;stroke-width:1.33333;stroke-linejoin:bevel;-inkscape-stroke:none;paint-order:stroke markers fill;stop-color:#000000"><tspan
-           x="555.58984"
-           y="301.90204"
-           id="tspan1906">s</tspan></text>
     </g>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke markers fill"
@@ -2334,14 +2266,6 @@
            style="stroke-width:0.352778"
            x="29"
            y="15.5">30</tspan></text>
-      <text
-         xml:space="preserve"
-         transform="matrix(0.26458333,0,0,0.26458333,-117,-51)"
-         id="text14943"
-         style="font-size:6.66667px;line-height:1.55;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans, Normal';text-align:end;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect14947);display:inline;fill:#000000;stroke-width:1.33333;stroke-linejoin:bevel;-inkscape-stroke:none;paint-order:stroke markers fill;stop-color:#000000"><tspan
-           x="555.58984"
-           y="301.90204"
-           id="tspan1908">s</tspan></text>
       <path
          style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke markers fill"
          d="m 27,9.5 h 6"
@@ -3090,14 +3014,6 @@
            style="stroke-width:0.352778"
            x="29.000002"
            y="11.5">6:0</tspan></text>
-      <text
-         xml:space="preserve"
-         transform="matrix(0.26458333,0,0,0.26458333,-117,-51)"
-         id="text16957"
-         style="font-size:6.66667px;line-height:1.55;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans, Normal';text-align:end;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect16961);display:inline;fill:#000000;stroke-width:1.33333;stroke-linejoin:bevel;-inkscape-stroke:none;paint-order:stroke markers fill;stop-color:#000000"><tspan
-           x="555.58984"
-           y="301.90204"
-           id="tspan1910">s</tspan></text>
     </g>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke markers fill"
@@ -3376,14 +3292,6 @@
            style="stroke-width:0.352778"
            x="26"
            y="11.5">31:0</tspan></text>
-      <text
-         xml:space="preserve"
-         transform="matrix(0.26458333,0,0,0.26458333,-117,-51)"
-         id="text2572"
-         style="font-size:6.66667px;line-height:1.55;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans, Normal';text-align:end;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect2582);display:inline;fill:#000000;stroke-width:1.33333;stroke-linejoin:bevel;-inkscape-stroke:none;paint-order:stroke markers fill;stop-color:#000000"><tspan
-           x="555.58984"
-           y="301.90204"
-           id="tspan1912">s</tspan></text>
       <path
          style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke markers fill"
          d="m 27,9.5 h 6"
