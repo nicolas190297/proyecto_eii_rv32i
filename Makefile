@@ -51,8 +51,11 @@ endef
 $(foreach blanco,$(blancos),$(eval $(call plantilla,$(blanco),$(prefijo)_$(blanco))))
 
 define plantilla_nuevo_ent =
-module $(1)
-    (output Y, input a,b );
+module $(1) (
+    output Y,
+    input a,
+    input b
+);
     assign Y = a & b;
 endmodule
 endef
@@ -69,8 +72,8 @@ module sim_$(1) ;
     );
 
     initial begin
-        $dumpfile("$(1).vcd");
-        $dumpvars(0);
+        $$dumpfile("$(1).vcd");
+        $$dumpvars(0);
         for (i=0;i<4;i = i + 1) begin
             {a,b} = i[1:0];
             #10;
