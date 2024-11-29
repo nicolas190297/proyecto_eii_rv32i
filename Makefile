@@ -53,8 +53,8 @@ $(foreach blanco,$(blancos),$(eval $(call plantilla,$(blanco),$(prefijo)_$(blanc
 define plantilla_nuevo_ent =
 module $(1) (
     output Y,
-    input a,
-    input b
+    input  a,
+    input  b
 );
     assign Y = a & b;
 endmodule
