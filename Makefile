@@ -16,7 +16,7 @@ ops 	   := -g2005-sv
 blancos := $(patsubst $(prefijo)_%,%,$(sims))
 
 arch_fuentes = $(wildcard $(fuentes)/*.v)
-arch_producidos = $(wildcard $(resultados)/*.*) $(wildcard $(trabajo)/*.*)
+arch_producidos = $(wildcard $(resultados)/*) $(wildcard $(trabajo)/*)
 
 .PHONY: all clean $(blancos)
 
