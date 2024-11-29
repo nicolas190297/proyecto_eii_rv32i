@@ -41,7 +41,7 @@ $(1): | $(resultados)
 	cd $(trabajo) && iverilog $(ops) -I$(r_fuentes) -s $(2) -o$(2) $(r_fuentes)/$(2).v
 	cd $(resultados) && vvp $(r_trabajo)/$(2)
 ifneq ($(netlistsvg),)
-diagrama_$(1): $(arch_cf)
+diagrama_$(1): | $(resultados)
 	cd $(trabajo) && yosys -q -p "read_verilog -I$(r_fuentes) $(r_fuentes)/$(1).v; prep -top $(1); write_json -compat-int $(1).json"
 	cd $(trabajo) && sed -i 's/"inout"/"output"/g' $(1).json
 	cd $(trabajo) && $(netlistsvg) $(1).json -o $(resultados)/$(1).svg
@@ -94,7 +94,7 @@ nuevo_%:
 
 topent = $(patsubst bin_%,%,$@)
 yosys_log = $(topent).yosys_log
-bin_%: $(arch_cf)
+bin_%: | $(resultados)
 	cd $(trabajo) && yosys -p "read_verilog -I$(r_fuentes) $(r_fuentes)/$(topent).v ; synth_ice40 -json $(topent).json -top $(topent)" -l $(yosys_log)
 	cd $(trabajo) && nextpnr-ice40 --hx4k --json $(topent).json --pcf $(fuentes)/$(topent).pcf --package tq144 --asc $(topent).asc --log $(topent).pnr_log
 	cd $(trabajo) && icepack $(topent).asc $(r_resultados)/$(topent).bin
