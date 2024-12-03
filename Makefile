@@ -2,6 +2,7 @@ prefijo        ?= sim
 dir_fuentes    ?= src
 dir_resultados ?= resultados
 dir_trabajo    ?= build
+dir_asm	       ?= asm
 
 resultados := $(abspath $(dir_resultados))
 trabajo    := $(abspath $(dir_trabajo))
@@ -18,7 +19,7 @@ blancos := $(patsubst $(prefijo)_%,%,$(sims))
 arch_fuentes = $(wildcard $(fuentes)/*.v)
 arch_producidos = $(wildcard $(resultados)/*) $(wildcard $(trabajo)/*)
 
-.PHONY: all clean $(blancos)
+.PHONY: all clean asm $(blancos)
 
 all : $(blancos)
 
@@ -102,3 +103,9 @@ bin_%: | $(resultados)
 progbin = $(patsubst prog_%,%.bin,$@)
 prog_%:
 	cd $(resultados) && iceprog $(progbin)
+
+asm:
+	$(MAKE) -C $(dir_asm)
+
+asm_%:
+	$(MAKE) -C $(dir_asm) $(patsubst asm_%,%,$@)
