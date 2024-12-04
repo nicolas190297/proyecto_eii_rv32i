@@ -64,28 +64,28 @@ entity sim_$(1) is
 end sim_$(1);
 
 architecture sim of sim_$(1) is
-  component $(1) is
-    port (
-      A : in  std_logic;
-      B : in  std_logic;
-      Y : out std_logic
-    );
-  end component; -- $(1)
-  signal entradas : std_logic_vector (1 downto 0);
-  signal salida : std_logic;
+    component $(1) is
+        port (
+            A : in  std_logic;
+            B : in  std_logic;
+            Y : out std_logic
+        );
+    end component; -- $(1)
+    signal entradas : std_logic_vector (1 downto 0);
+    signal salida : std_logic;
 begin
-  -- Dispositivo bajo prueba
-  dut : $(1) port map (A=>entradas(1),B=>entradas(0),Y=>salida);
+    -- Dispositivo bajo prueba
+    dut : $(1) port map (A=>entradas(1),B=>entradas(0),Y=>salida);
 
-  excitaciones: process
-  begin
-    for i in 0 to (2**entradas'length)-1 loop
-      entradas <= std_logic_vector(to_unsigned(i,entradas'length));
-      wait for 1 ns;
-    end loop;
-    wait for 1 ns; -- Espera extra antes de salir
-    finish;
-  end process; -- excitaciones
+    excitaciones: process
+    begin
+        for i in 0 to (2**entradas'length)-1 loop
+            entradas <= std_logic_vector(to_unsigned(i,entradas'length));
+            wait for 1 ns;
+        end loop;
+        wait for 1 ns; -- Espera extra antes de salir
+        finish;
+    end process; -- excitaciones
 end sim;
 endef
 
@@ -94,16 +94,16 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 
 entity $(1) is
-  port (
-    A : in  std_logic;
-    B : in  std_logic;
-    Y : out std_logic
-  );
+    port (
+        A : in  std_logic;
+        B : in  std_logic;
+        Y : out std_logic
+    );
 end $(1);
 
 architecture arch of $(1) is
 begin
-  Y <= A and B;
+    Y <= A and B;
 end arch;
 endef
 
