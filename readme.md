@@ -70,7 +70,7 @@ Figura 1: Diagrama esquemático del diseño final esperado
 
 ## Entorno de trabajo
 
-Este proyecto incluye un Makefile que automatiza las tareas. Requiere tener instalado make para usar el makefila; icarus verilog para simular; yosys y netlistsvg para generar diagramas; binutils de arquitcetura riscv64-unknown-elf para compilar el programa de prueba.
+Este proyecto incluye un Makefile que automatiza las tareas. Requiere tener instalado make para usar el makefile; GHDL para simular descripciones en VHDL; icarus verilog para simular descripciones en verilog; yosys y netlistsvg para generar diagramas; binutils de arquitcetura riscv64-unknown-elf para compilar el programa de prueba. Por defecto el proyecto está en modo Verilog, para cambiara a vhdl usa `make modo_vhdl`. Para volver a modo verilog desde modo vhdl usa `make modo_verilog`.
 
 Para crear archivos verilog para un nuevo módulo usar `make nuevo_<modulo>` donde `<modulo>` es el nombre del nuevo módulo. Esto creará `src/<modulo>.v` conteniendo la descripción de una compuerta and de dos entradas y `src/sim_<modulo>.v` con su simulación. Luego pueden modificarse estos archivos para contener el diseño y la simulación deseados.
 
