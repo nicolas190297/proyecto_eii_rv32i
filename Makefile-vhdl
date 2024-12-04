@@ -17,7 +17,7 @@ blancos := $(patsubst $(prefijo)_%,%,$(sims))
 
 arch_fuente = $(wildcard $(fuentes)/*.vhd)
 
-arch_producidos = $(wildcard $(resultados)/*.*) $(wildcard $(trabajo)/*.*)
+arch_producidos = $(wildcard $(resultados)/*) $(wildcard $(trabajo)/*)
 
 .PHONY: all clean $(blancos) asm
 
