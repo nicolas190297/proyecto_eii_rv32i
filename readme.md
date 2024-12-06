@@ -34,7 +34,7 @@ Tabla 1: Funciones de la ALU.
 *Notas*:  *Sel* es la entrada de selección, de 4 bit. *A* y *B* son los operandos, de 32 bit. *Y* es el resultado, de 32 bit y *Z* es la salida de cero, de un bit. Los operadores ' $<<$ ' y ' $>>$ ' denotan desplazamiento a la izquierda y desplazamiento a la derecha respectivamente. Los operadores ' $=$ ' y ' $<$ ' denotan las operaciones relacionales *igual a* y *menor que*, que evalúan a $1$ si se cumple la condición y $0$ en caso contrario.
 
 - Describir en lenguaje de descripción de hardware y evaluar mediante simulación las siguientes memorias:
-  - Memoria RAM de dos puertos sincrónicos (lectura y escritura) de 256x32 bit.
+  - Memoria RAM de dos puertos sincrónicos (lectura y escritura) de 512x32 bit.
   - Conjunto de registros de 32x32 bit de tres puertos sincrónicos, dos de lectura y uno de escritura. El registro cero será de solo lectura y su valor será siempre '0'.
 
 - Describir el conjunto de registros de la arquitectura RISC-V
