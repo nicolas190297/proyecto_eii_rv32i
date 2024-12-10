@@ -414,7 +414,7 @@
            sodipodi:role="line"
            id="tspan2829"
            x="130.06499"
-           y="26.456694">ram_256x32</tspan></text>
+           y="26.456694">ram_512x32</tspan></text>
       <path
          style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke markers fill"
          d="m 67.999998,12 -1,2"
@@ -1139,7 +1139,7 @@
            id="tspan8288"
            style="stroke-width:0.352778"
            x="29"
-           y="10">9:1</tspan></text>
+           y="10">10:2</tspan></text>
     </g>
     <g
        id="g9116"

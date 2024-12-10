@@ -14,7 +14,6 @@ Electrónica II para Ingeniería Electrónica. 2024
   - Función *desplazamiento a la izquierda* de un valor de 32 bit por la cantidad de bits indicada por un valor de 5 bit. Ingresa ceros por la derecha.
   - Función *desplazamiento a la derecha* de un valor de 32 bit por la cantidad de bits indicada por un valor de 5 bit. Cuenta con un selector de modo *con signo*. En modo sin signo ingresa ceros por la izquierda, en modo con signo copia el bit de signo (extensión de signo).
 - A partir de los componentes desarrollados en el punto anterior, diseña, describe a nivel estructural y evalúa mediante simulación una unidad aritmética-lógica de 32 bit con dos entradas de operando, una entrada de selección, una salida de resultado y una salida de cero, con las funciones dadas por la Tabla 1.
-- Diseña, describe a nivel comportamental y evalúa mediante simulación un registro de 32 bit con habilitación de escritura.
 
 Tabla 1: Funciones de la ALU.
 
@@ -33,7 +32,8 @@ Tabla 1: Funciones de la ALU.
 
 *Notas*:  *Sel* es la entrada de selección, de 4 bit. *A* y *B* son los operandos, de 32 bit. *Y* es el resultado, de 32 bit y *Z* es la salida de cero, de un bit. Los operadores ' $<<$ ' y ' $>>$ ' denotan desplazamiento a la izquierda y desplazamiento a la derecha respectivamente. Los operadores ' $=$ ' y ' $<$ ' denotan las operaciones relacionales *igual a* y *menor que*, que evalúan a $1$ si se cumple la condición y $0$ en caso contrario.
 
-- Describir en lenguaje de descripción de hardware y evaluar mediante simulación las siguientes memorias:
+- Describir en lenguaje de descripción de hardware y evaluar mediante simulación los siguientes elementos de memoria:
+  - Registro de 32 bit con reset sincrónico y habilitación.
   - Memoria RAM de dos puertos sincrónicos (lectura y escritura) de 512x32 bit.
   - Conjunto de registros de 32x32 bit de tres puertos sincrónicos, dos de lectura y uno de escritura. El registro cero será de solo lectura y su valor será siempre '0'.
 
