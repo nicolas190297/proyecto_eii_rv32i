@@ -5,9 +5,11 @@
 `include "fn_or.v"
 `include "fn_suma_resta.v"
 `include "fn_xor.v"
+`include "fn_cero.v"
+
 module alu (
     output reg [31:0] Y,
-    output     [31:0] z,
+    output            z,
     input      [31:0] a,
     input      [31:0] b,
     input      [ 3:0] sel
@@ -20,33 +22,34 @@ module alu (
     wire [31:0] y_or;
     wire [31:0] y_xor;
 
+
     fn_and U_and(
         .Y(y_and),
         .a(a),
         .b(b)
     );
 
-      fn_comparacion_menor U_comparacion_menor (
+    fn_comparacion_menor U_comparacion_menor (
         .Y(y_menor),
         .a(a),
         .b(b),
         .sin_signo(sel[1])
     );
 
-      fn_desp_der U_desp_der (
+    fn_desp_der U_desp_der (
         .Y(y_desp_der),
         .a(a),
-        .b(b),
+        .b(b[4:0]),
         .con_signo(sel[0])
     );
 
     fn_desp_izq U_desp_izq (
         .Y(y_desp_izq),
         .a(a),
-        .b(b)
+        .b(b[4:0])
     );
 
-        fn_or U_or(
+    fn_or U_or(
         .Y(y_or),
         .a(a),
         .b(b)
@@ -59,7 +62,7 @@ module alu (
         .resta(sel[0])
     );
 
-        fn_xor U_xor(
+    fn_xor U_xor(
         .Y(y_xor),
         .a(a),
         .b(b)
@@ -77,4 +80,8 @@ module alu (
         3'b111: Y = y_and;
         endcase
     end
+    fn_cero U_cero(
+        .Y(z),
+        .a(Y)
+    );
 endmodule
