@@ -25,26 +25,32 @@ module sim_Ram_512x32 ;
         din = 1;
         addr = 9'd511;
         write_en = 1;
-        @(posedge clk);
-        @(posedge clk) #5;
+        @(posedge clk) #5; // completa ciclo de escritura
+        write_en = 0;
+        @(posedge clk) #5; // ciclo de lectura para comprobar
+
         din = 1;
         addr = 9'd510;
         write_en = 0;
-        @(posedge clk);
-        @(posedge clk)#5;
+        @(posedge clk) #5; // completa ciclo de escritura
+        write_en = 0;
+        @(posedge clk) #5; // ciclo de lectura para comprobar
 
         din = 0;
         addr = 9'd509;
         write_en = 1;
-        @(posedge clk);
-        @(posedge clk)#5;
+        @(posedge clk) #5; // completa ciclo de escritura
+        write_en = 0;
+        @(posedge clk) #5; // ciclo de lectura para comprobar
 
         din = 2;
         addr = 9'd508;
         write_en = 1;
-        @(posedge clk);
-        @(posedge clk)#5;
-        #5;
+        @(posedge clk) #5; // completa ciclo de escritura
+        write_en = 0;
+        @(posedge clk) #5; // ciclo de lectura para comprobar
+        
+        #5; // Espera para generar un punto de datos extra en la salida (para el diagrama de tiempo)
         $finish;
         
 
