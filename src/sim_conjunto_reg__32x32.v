@@ -1,8 +1,7 @@
 `include "conjunto_reg__32x32.v"
 module sim_conjunto_reg__32x32 ;
-
     reg  clk;
-    reg  rst;
+    reg  write_en;
     reg  [4:0]  addr1;
     reg  [4:0]  addr2;
     reg  [4:0]  write_addr;
@@ -12,7 +11,7 @@ module sim_conjunto_reg__32x32 ;
 
     conjunto_reg__32x32 dut (
         .clk(clk),
-        .rst(rst),
+        .write_en(write_en),
         .addr1(addr1),
         .addr2(addr2),
         .write_addr(write_addr),
@@ -30,48 +29,43 @@ module sim_conjunto_reg__32x32 ;
     initial begin
       $dumpfile("conjunto_reg__32x32.vcd"); 
       $dumpvars(0); 
-        rst = 0;
+        write_en = 0;
         addr1 = 0;
         addr2 = 0;
         write_addr = 0;
         write_data = 0;
-        #10;
+        @(posedge clk) #1;
 
-        addr1 = 5'd0; // Probar que el registro 0 siempre es 0
-        #5;
 
+        addr1 = 0; // Probar que el registro 0 siempre es 0
         // Intentar escribir en el registro 0 (no debería cambiar)
-        rst = 1;
-        write_addr = 5'd0;
+        write_en = 1;
+        write_addr = 0;
         write_data = 32'h12345678;
-        #10;
+        @(posedge clk) #1;
+         // Leer nuevamente el registro 0
+        write_en = 0;
+        @(posedge clk) #1;
 
-        // Leer nuevamente el registro 0
-        addr1 = 5'd0;
-        #5;
-
-        // Escribir en un registro distinto (ejemplo: registro 1)
+        // Escribe registro 1
         write_addr = 5'd1;
         write_data = 32'hDEADBEEF;
-        #10;
-
-        // Leer el registro 1
-        rst = 0; // Deshabilitar escritura
-        addr1 = 5'd1;
-        #5;
-
-        // Probar el segundo puerto de lectura
-        addr2 = 5'd1;
-        #5;
-
-        // Probar otro registro (ejemplo: registro 2)
-        rst = 1;
+        write_en = 1;
+        @(posedge clk) #1;
+        // Escribe registro 2
         write_addr = 5'd2;
-        write_data = 32'hCAFEBABE;
-        #10;
+        write_data = 32'h12345678;
+        write_en = 1;
+        @(posedge clk) #1;
+        // No escribe
+        write_en = 0;
+        write_data = 0;
 
-        rst = 0;
-        addr1 = 5'd2;
+        // Lee registros 1 y 2
+        addr1 = 1;
+        addr2 = 2;
+        @(posedge clk) #1;
+        @(posedge clk) #1;
         #5;
         $finish;
     end
