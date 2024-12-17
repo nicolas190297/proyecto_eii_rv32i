@@ -1,7 +1,6 @@
 module branch (
-    output Y,
-    input  a,
-    input  b
+    output        z_branch,
+    input  [2:0] funct3
 );
-    assign Y = a & b;
+    assign z_branch = funct3[2] ~^ funct3[0];
 endmodule

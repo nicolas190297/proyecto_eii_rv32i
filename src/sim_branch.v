@@ -1,20 +1,21 @@
 `include "branch.v"
 module sim_branch ;
-    integer i;
-    reg a,b;
-    wire Y;
+    reg [2:0] funct3;
+    wire z_branch;
     branch dut (
-        .Y (Y),
-        .a (a),
-        .b (b)
+        .z_branch (z_branch),
+        .funct3 (funct3)
     );
 
     initial begin
         $dumpfile("branch.vcd");
         $dumpvars(0);
-        for (i=0;i<4;i = i + 1) begin
-            {a,b} = i[1:0];
+        funct3 = 000;#10;
+        funct3 = 001;#10;
+        funct3 = 100;#10;
+        funct3 = 101;#10;
+        funct3 = 110;#10;
+        funct3 = 111;#10;
             #10;
         end
-    end
 endmodule
