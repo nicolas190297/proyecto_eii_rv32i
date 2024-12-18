@@ -33,15 +33,15 @@
      inkscape:document-units="mm"
      showgrid="true"
      showguides="false"
-     inkscape:zoom="1.4289282"
-     inkscape:cx="430.04261"
-     inkscape:cy="531.16736"
+     inkscape:zoom="1.0104048"
+     inkscape:cx="496.33572"
+     inkscape:cy="374.10748"
      inkscape:window-width="1920"
      inkscape:window-height="974"
      inkscape:window-x="-11"
      inkscape:window-y="-11"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer3">
+     inkscape:current-layer="layer1">
     <inkscape:grid
        type="xygrid"
        id="grid1124"
@@ -53,6 +53,46 @@
   </sodipodi:namedview>
   <defs
      id="defs2">
+    <marker
+       style="overflow:visible"
+       id="marker2897"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow3"
+       markerWidth="4.2071066"
+       markerHeight="6.9999995"
+       viewBox="0 0 4.2071068 7"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:round"
+         d="M 3,-3 0,0 3,3"
+         id="path2895"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow3"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow3"
+       markerWidth="4.2071066"
+       markerHeight="6.9999995"
+       viewBox="0 0 4.2071068 7"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:round"
+         d="M 3,-3 0,0 3,3"
+         id="arrow3"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc" />
+    </marker>
     <rect
        x="555.59058"
        y="287.24408"
@@ -414,7 +454,7 @@
            sodipodi:role="line"
            id="tspan2829"
            x="130.06499"
-           y="26.456694">ram_512x32</tspan></text>
+           y="26.456694">ram_256x32</tspan></text>
       <path
          style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke markers fill"
          d="m 67.999998,12 -1,2"
@@ -952,7 +992,7 @@
            sodipodi:role="line"
            id="tspan7580"
            x="130.06499"
-           y="26.456694">R_instr</tspan></text>
+           y="26.456694">R_inst</tspan></text>
       <path
          style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke markers fill"
          d="m 42.000003,16.000001 -1,2"
@@ -1139,7 +1179,7 @@
            id="tspan8288"
            style="stroke-width:0.352778"
            x="29"
-           y="10">10:2</tspan></text>
+           y="10">9:1</tspan></text>
     </g>
     <g
        id="g9116"
@@ -1217,7 +1257,7 @@
            sodipodi:role="line"
            id="tspan9100"
            x="130.06499"
-           y="26.456694">R_pc_instr</tspan></text>
+           y="26.456694">R_pc_inst</tspan></text>
       <path
          style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke markers fill"
          d="m 42.000003,16.000001 -1,2"
@@ -1300,7 +1340,7 @@
          id="tspan9136"
          style="stroke-width:0.352778"
          x="151.99998"
-         y="153">esc_instr</tspan></text>
+         y="153">esc_inst</tspan></text>
     <circle
        id="path9140"
        style="fill:#000000;stroke:none;stroke-width:0.264583"
@@ -2814,7 +2854,7 @@
            sodipodi:role="line"
            id="tspan16865"
            x="182.19516"
-           y="77.444206">esc_instr</tspan></text>
+           y="77.444206">esc_inst</tspan></text>
       <path
          style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke markers fill"
          d="m 65.00001,4.9999974 h 5.000002"
@@ -2986,22 +3026,6 @@
          style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke markers fill"
          d="m 65.00001,34.999997 h 5.000002"
          id="path17055"
-         sodipodi:nodetypes="cc" />
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;line-height:1.55;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans, Normal';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.33333;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill;stop-color:#000000;stop-opacity:1"
-         x="150.18733"
-         y="47.505714"
-         id="text1210"
-         transform="matrix(0.26458333,0,0,0.26458333,-11.737066,-12.56922)"><tspan
-           sodipodi:role="line"
-           id="tspan1208"
-           x="150.18733"
-           y="47.505714">hab_pc</tspan></text>
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke markers fill"
-         d="M 26.999997,-1 H 21.999998"
-         id="path1212"
          sodipodi:nodetypes="cc" />
     </g>
     <g
@@ -3180,7 +3204,7 @@
          id="tspan17021"
          style="stroke-width:0.352778"
          x="318.00003"
-         y="25.999994">esc_instr</tspan></text>
+         y="25.999994">esc_inst</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:3.52777px;line-height:1.55;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans, Normal';text-decoration-color:#000000;fill:#000000;stroke-width:0.352777;stroke-linejoin:bevel;-inkscape-stroke:none;paint-order:stroke markers fill;stop-color:#000000"
@@ -3427,42 +3451,6 @@
          style="stroke-width:0.352778"
          x="255"
          y="243">Z_branch</tspan></text>
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke markers fill"
-       d="m 34.999999,134 v 23 l 5,0"
-       id="path992" />
-    <text
-       xml:space="preserve"
-       style="font-size:3.52777px;line-height:1.55;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans, Normal';text-decoration-color:#000000;fill:#000000;stroke-width:0.352777;stroke-linejoin:bevel;-inkscape-stroke:none;paint-order:stroke markers fill;stop-color:#000000"
-       x="40.999996"
-       y="157"
-       id="text1098"><tspan
-         sodipodi:role="line"
-         id="tspan1096"
-         style="stroke-width:0.352778"
-         x="40.999996"
-         y="157">hab_pc</tspan></text>
-    <circle
-       id="path1100"
-       style="fill:#000000;stroke:none;stroke-width:0.264583"
-       cx="35"
-       cy="134"
-       r="0.75" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke markers fill"
-       d="m 263,19.999999 h -8"
-       id="path1214" />
-    <text
-       xml:space="preserve"
-       style="font-size:3.52777px;line-height:1.55;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans, Normal';text-align:end;text-decoration-color:#000000;text-anchor:end;fill:#000000;stroke-width:0.352777;stroke-linejoin:bevel;-inkscape-stroke:none;paint-order:stroke markers fill;stop-color:#000000"
-       x="253.99998"
-       y="19.999998"
-       id="text1218"><tspan
-         sodipodi:role="line"
-         id="tspan1216"
-         style="stroke-width:0.352778"
-         x="253.99998"
-         y="19.999998">hab_pc</tspan></text>
     <g
        id="g1163"
        transform="translate(4.999999,-45.000001)">
@@ -3515,14 +3503,329 @@
          style="stroke-width:0.352778"
          x="90"
          y="109.99999" /></text>
+    <g
+       id="g2509">
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;paint-order:stroke markers fill"
+         id="rect2478"
+         width="42"
+         height="21"
+         x="-15.000001"
+         y="185"
+         ry="1.9999989"
+         rx="2.000001" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.52777px;line-height:1.55;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans, Normal';text-align:start;text-decoration-color:#000000;text-anchor:start;fill:#000000;stroke-width:0.352777;stroke-linejoin:bevel;paint-order:stroke markers fill;stop-color:#000000"
+         x="-10.000002"
+         y="190"
+         id="text2482"><tspan
+           sodipodi:role="line"
+           id="tspan2480"
+           style="text-align:start;text-anchor:start;stroke-width:0.352778"
+           x="-10.000002"
+           y="190">CARGA</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:3.52777px;line-height:1.55;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans, Normal';text-decoration-color:#000000;fill:#000000;stroke-width:0.352777;stroke-linejoin:bevel;paint-order:stroke markers fill;stop-color:#000000"
+         x="-10.000002"
+         y="194.99998"
+         id="text2486"><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.352778"
+           x="-10.000002"
+           y="194.99998"
+           id="tspan2488">- inst* = dat_lectura</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:3.52777px;line-height:1.55;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans, Normal';text-decoration-color:#000000;fill:#000000;stroke-width:0.352777;stroke-linejoin:bevel;paint-order:stroke markers fill;stop-color:#000000"
+         x="-10.000002"
+         y="199"
+         id="text2494"><tspan
+           sodipodi:role="line"
+           id="tspan2492"
+           style="stroke-width:0.352778"
+           x="-10.000002"
+           y="199">- pc_inst* = pc</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:3.52777px;line-height:1.55;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans, Normal';text-decoration-color:#000000;fill:#000000;stroke-width:0.352777;stroke-linejoin:bevel;paint-order:stroke markers fill;stop-color:#000000"
+         x="-10.000002"
+         y="203.99998"
+         id="text2498"><tspan
+           sodipodi:role="line"
+           id="tspan2496"
+           style="stroke-width:0.352778"
+           x="-10.000002"
+           y="203.99998">- pc* = pc+4</tspan></text>
+    </g>
+    <g
+       id="g2529"
+       transform="translate(55.000001)">
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;paint-order:stroke markers fill"
+         id="rect2511"
+         width="42"
+         height="21"
+         x="-15.000001"
+         y="185"
+         ry="1.9999989"
+         rx="2.000001" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.52777px;line-height:1.55;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans, Normal';text-align:start;text-decoration-color:#000000;text-anchor:start;fill:#000000;stroke-width:0.352777;stroke-linejoin:bevel;paint-order:stroke markers fill;stop-color:#000000"
+         x="-10.000002"
+         y="190"
+         id="text2515"><tspan
+           sodipodi:role="line"
+           id="tspan2513"
+           style="text-align:start;text-anchor:start;stroke-width:0.352778"
+           x="-10.000002"
+           y="190">DECODIFICA</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:3.52777px;line-height:1.55;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans, Normal';text-decoration-color:#000000;fill:#000000;stroke-width:0.352777;stroke-linejoin:bevel;paint-order:stroke markers fill;stop-color:#000000"
+         x="-10.000002"
+         y="194.99998"
+         id="text2519"><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.352778"
+           x="-10.000002"
+           y="194.99998"
+           id="tspan2517">- dat1* = reg[rs1]</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:3.52777px;line-height:1.55;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans, Normal';text-decoration-color:#000000;fill:#000000;stroke-width:0.352777;stroke-linejoin:bevel;paint-order:stroke markers fill;stop-color:#000000"
+         x="-10.000002"
+         y="199"
+         id="text2523"><tspan
+           sodipodi:role="line"
+           id="tspan2521"
+           style="stroke-width:0.352778"
+           x="-10.000002"
+           y="199">- dat2* = reg[rs2]</tspan></text>
+    </g>
+    <g
+       id="g2547"
+       transform="translate(24.000001,27.999999)">
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;paint-order:stroke markers fill"
+         id="rect2533"
+         width="47"
+         height="21"
+         x="-15.000001"
+         y="185"
+         ry="1.9999989"
+         rx="2.000001" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.52777px;line-height:1.55;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans, Normal';text-align:start;text-decoration-color:#000000;text-anchor:start;fill:#000000;stroke-width:0.352777;stroke-linejoin:bevel;paint-order:stroke markers fill;stop-color:#000000"
+         x="-10.000002"
+         y="190"
+         id="text2537"><tspan
+           sodipodi:role="line"
+           id="tspan2535"
+           style="text-align:start;text-anchor:start;stroke-width:0.352778"
+           x="-10.000002"
+           y="190">ESCRIBE</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:3.52777px;line-height:1.05;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans, Normal';text-decoration-color:#000000;fill:#000000;stroke-width:0.352777;stroke-linejoin:bevel;paint-order:stroke markers fill;stop-color:#000000"
+         x="-13"
+         y="195"
+         id="text2541"><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.352778"
+           x="-13"
+           y="195"
+           id="tspan2601">- Escribe resultado</tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.352778"
+           x="-13"
+           y="198.70416"
+           id="tspan2605">  en reg[rd]</tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.352778"
+           x="-13"
+           y="202.40831"
+           id="tspan2607">- dat_lectura* = mem[PC]</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:3.52777px;line-height:1.55;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans, Normal';text-decoration-color:#000000;fill:#000000;stroke-width:0.352777;stroke-linejoin:bevel;paint-order:stroke markers fill;stop-color:#000000"
+         x="-10.000002"
+         y="199"
+         id="text2545"><tspan
+           sodipodi:role="line"
+           id="tspan2543"
+           style="stroke-width:0.352778"
+           x="-10.000002"
+           y="199" /></text>
+    </g>
+    <g
+       id="g2567"
+       transform="translate(86.999999,26.999999)">
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;paint-order:stroke markers fill"
+         id="rect2551"
+         width="48"
+         height="24"
+         x="-15.000001"
+         y="185"
+         ry="1.9999989"
+         rx="2.000001" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.52777px;line-height:1.55;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans, Normal';text-align:start;text-decoration-color:#000000;text-anchor:start;fill:#000000;stroke-width:0.352777;stroke-linejoin:bevel;paint-order:stroke markers fill;stop-color:#000000"
+         x="-10.000002"
+         y="190"
+         id="text2555"><tspan
+           sodipodi:role="line"
+           id="tspan2553"
+           style="text-align:start;text-anchor:start;stroke-width:0.352778"
+           x="-10.000002"
+           y="190">MEMORIA/EJECUTA</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:3.52777px;line-height:1.05;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans, Normal';text-decoration-color:#000000;fill:#000000;stroke-width:0.352777;stroke-linejoin:bevel;paint-order:stroke markers fill;stop-color:#000000"
+         x="-13.000002"
+         y="195"
+         id="text2561"><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.352778"
+           x="-13.000002"
+           y="195"
+           id="tspan2559">- Lee o escribe memoria</tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.352778"
+           x="-13.000002"
+           y="198.70416"
+           id="tspan2573">- Evalúa condición branch</tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.352778"
+           x="-13.000002"
+           y="202.40831"
+           id="tspan2577">- Actualiza PC en saltos</tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.352778"
+           x="-13.000002"
+           y="206.11247"
+           id="tspan2579">- Ejecuta operaciones ALU</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:3.52777px;line-height:1.55;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans, Normal';text-decoration-color:#000000;fill:#000000;stroke-width:0.352777;stroke-linejoin:bevel;paint-order:stroke markers fill;stop-color:#000000"
+         x="-10.000002"
+         y="199"
+         id="text2565"><tspan
+           sodipodi:role="line"
+           id="tspan2563"
+           style="stroke-width:0.352778"
+           x="-10.000002"
+           y="199" /></text>
+    </g>
+    <g
+       id="g2597"
+       transform="translate(107)">
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;paint-order:stroke markers fill"
+         id="rect2581"
+         width="42"
+         height="21"
+         x="-15.000001"
+         y="185"
+         ry="1.9999989"
+         rx="2.000001" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.52777px;line-height:1.55;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans, Normal';text-align:start;text-decoration-color:#000000;text-anchor:start;fill:#000000;stroke-width:0.352777;stroke-linejoin:bevel;paint-order:stroke markers fill;stop-color:#000000"
+         x="-10.000002"
+         y="190"
+         id="text2585"><tspan
+           sodipodi:role="line"
+           id="tspan2583"
+           style="text-align:start;text-anchor:start;stroke-width:0.352778"
+           x="-10.000002"
+           y="190">DIRECCION</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:3.52777px;line-height:1.05;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans, Normal';text-decoration-color:#000000;fill:#000000;stroke-width:0.352777;stroke-linejoin:bevel;paint-order:stroke markers fill;stop-color:#000000"
+         x="-10.000002"
+         y="194.99998"
+         id="text2591"><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.352778"
+           x="-10.000002"
+           y="194.99998"
+           id="tspan2587">- calcula dirección</tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.352778"
+           x="-10.000002"
+           y="198.70415"
+           id="tspan2589">  de memoria</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:3.52777px;line-height:1.55;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans, Normal';text-decoration-color:#000000;fill:#000000;stroke-width:0.352777;stroke-linejoin:bevel;paint-order:stroke markers fill;stop-color:#000000"
+         x="-10.000002"
+         y="199"
+         id="text2595"><tspan
+           sodipodi:role="line"
+           id="tspan2593"
+           style="stroke-width:0.352778"
+           x="-10.000002"
+           y="199" /></text>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#Arrow3);paint-order:stroke markers fill"
+       d="m 32.999999,209 v 4"
+       id="path2674"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;paint-order:stroke markers fill;marker-end:url(#marker2897)"
+       d="M 26.999999,195 H 39.999997"
+       id="path2893" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;paint-order:stroke markers fill;marker-end:url(#marker2897)"
+       d="M 81.999997,195 H 91.999998"
+       id="path2941" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#marker2897);paint-order:stroke markers fill"
+       d="m 134,195 c 15,0 14,30 -14,30"
+       id="path2973"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;paint-order:stroke markers fill;marker-end:url(#marker2897)"
+       d="M 71.999999,224 H 55.999997"
+       id="path3056" />
+    <circle
+       id="path3092"
+       style="fill:#000000;stroke:none;stroke-width:0.264583"
+       cx="32.999996"
+       cy="208.99998"
+       r="0.75" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;line-height:1.55;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans, Normal';text-align:center;text-decoration-color:#000000;text-anchor:middle;fill:#000000;stroke-width:0.352777;stroke-linejoin:bevel;-inkscape-stroke:none;paint-order:stroke markers fill;stop-color:#000000"
+       x="33"
+       y="208"
+       id="text3096"><tspan
+         sodipodi:role="line"
+         id="tspan3094"
+         style="text-align:center;text-anchor:middle;stroke-width:0.352778"
+         x="33"
+         y="208">RESET</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#Arrow3);paint-order:stroke markers fill"
+       d="M 8.9999986,223 C -20.000001,223 -32.000001,195 -15.000001,195"
+       id="path3102"
+       sodipodi:nodetypes="cc" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer3"
-     inkscape:label="Anotaciones">
+     inkscape:label="Anotaciones"
+     sodipodi:insensitive="true">
     <path
-       style="fill:none;stroke:#666666;stroke-width:0.499999;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke markers fill;stroke-dasharray:0.99999797, 2.99999392;stroke-dashoffset:0"
-       d="m -35.000001,64.999999 464.000001,0"
+       style="fill:none;stroke:#666666;stroke-width:0.499999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.999998, 2.99999;stroke-dashoffset:0;paint-order:stroke markers fill"
+       d="M -35.000001,64.999999 H 429"
        id="path1295"
        sodipodi:nodetypes="cc"
        transform="translate(35.530459,5.719894)" />
@@ -3543,7 +3846,7 @@
        transform="translate(35.530459,5.719894)"><tspan
          sodipodi:role="line"
          id="tspan1907"
-         style="text-align:start;text-anchor:start;stroke-width:0.352778;fill:#666666"
+         style="text-align:start;text-anchor:start;fill:#666666;stroke-width:0.352778"
          x="29.999998"
          y="60">CONTROL</tspan></text>
     <text
@@ -3555,7 +3858,7 @@
        transform="translate(35.530459,5.719894)"><tspan
          sodipodi:role="line"
          id="tspan1911"
-         style="text-align:start;text-anchor:start;stroke-width:0.352778;fill:#666666"
+         style="text-align:start;text-anchor:start;fill:#666666;stroke-width:0.352778"
          x="29.999996"
          y="75">DATAPATH</tspan></text>
     <text
@@ -3567,9 +3870,39 @@
        transform="translate(35.530459,5.719894)"><tspan
          sodipodi:role="line"
          id="tspan1923"
-         style="text-align:center;text-anchor:middle;stroke-width:0.352778;fill:#666666"
+         style="text-align:center;text-anchor:middle;fill:#666666;stroke-width:0.352778"
          x="115"
          y="110">BUS DEL SISTEMA</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.5, 1.5;stroke-dashoffset:0;paint-order:stroke markers fill"
+       id="rect1813"
+       width="180"
+       height="65"
+       x="10.530457"
+       y="180.71989" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;line-height:1.55;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans, Normal';text-align:center;text-decoration-color:#000000;text-anchor:middle;fill:#000000;stroke-width:0.352777;stroke-linejoin:bevel;-inkscape-stroke:none;paint-order:stroke markers fill;stop-color:#000000"
+       x="40.530457"
+       y="185.71989"
+       id="text2474"><tspan
+         sodipodi:role="line"
+         id="tspan2472"
+         style="stroke-width:0.352778"
+         x="40.530457"
+         y="185.71989"></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;line-height:1.55;font-family:'Lucida Sans';-inkscape-font-specification:'Lucida Sans, Normal';text-align:start;text-decoration-color:#000000;text-anchor:start;fill:#000000;stroke-width:0.352777;stroke-linejoin:bevel;-inkscape-stroke:none;paint-order:stroke markers fill;stop-color:#000000"
+       x="-20.000002"
+       y="180"
+       id="text2468"
+       transform="translate(35.530459,5.719894)"><tspan
+         sodipodi:role="line"
+         id="tspan2466"
+         style="text-align:start;text-anchor:start;stroke-width:0.352778"
+         x="-20.000002"
+         y="180">Ciclo de instrucción</tspan></text>
   </g>
   <metadata
      id="metadata17768">
