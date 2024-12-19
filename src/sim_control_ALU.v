@@ -1,9 +1,9 @@
 `include "control_ALU.v"
 module sim_control_ALU ;
     integer i;
-    reg [1:0] modo; 
-    reg [2:0] funct3;
-    reg [6:0] funct7;
+    reg  [1:0] modo  ; 
+    reg  [2:0] funct3;
+    reg  [6:0] funct7;
     wire [3:0] sel_alu;
     control_ALU dut (
         .modo (modo),

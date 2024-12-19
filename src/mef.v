@@ -1,17 +1,19 @@
 module mef (
-    output esc_pc,
-    output branch,
-    output sel_dir,
-    output esc_mem,
-    output esc_inst,
-    output [2:0] sel_inmediato,
-    output [1:0] modo_alu,
-    output [1:0] sel_op1,
-    output [1:0] sel_op2,
-    output [1:0] sel_y,
-    input  reset,
-    input clk,
-    input [6:0] op
+    output reg       esc_pc        ,
+    output reg       branch        ,
+    output reg       sel_dir       ,
+    output reg       esc_mem       ,
+    output reg       esc_reg       ,
+    output reg       esc_inst      ,
+    output reg [2:0] sel_inmediato ,
+    output reg [1:0] modo_alu      ,
+    output reg [1:0] sel_op1       ,
+    output reg [1:0] sel_op2       ,
+    output reg [1:0] sel_y         ,
+    input      [6:0] op            ,
+    input            reset         ,
+    input            clk           
+    
 );
     //asignacion de estados
     parameter [2:0] ESCRIBE         = 0;
@@ -23,6 +25,7 @@ module mef (
     reg [2:0] estado_sig;
     reg [2:0]     estado;
 
+    //Estado actual
     always @ (posedge clk)
     begin
         if(reset)
@@ -32,7 +35,7 @@ module mef (
     end
 
     //LES
-    always @(posedge clk)
+    always @(*)
     begin
         case (estado)
             ESCRIBE         : estado_sig = CARGA;
@@ -44,4 +47,129 @@ module mef (
         endcase
     end
 
+    //always @(*) begin
+    //   case(sel_y)
+    //    2'b00: y = dat_lec; 
+    //    2'b01: y = d; // salida siguiente CORRESTPONDE AL BLOQUE R_Y retardado
+    //    2'b10: y = q; // salida retardada CORRESTPONDE AL BLOQUE R_Y retardado
+    //   endcase
+    //end
+
+        always @ (*) begin
+            esc_pc        = 0;
+            branch        = 0;
+            sel_dir       = 0;
+            esc_mem       = 0;
+            esc_reg       = 0;
+            esc_inst      = 0;
+            sel_inmediato = 0;
+            modo_alu      = 0;
+            sel_op1       = 0;
+            sel_op2       = 0;
+            sel_y         = 0;            
+            
+            case(estado)
+            CARGA: begin 
+                esc_inst = 1'b1 ;  //se carga lo de la salida de la ram en el R_inst
+                sel_op1  = 2'b00;  //estoy seleccionando el pc
+                sel_op2  = 2'b10;  //seleccion el 4
+                esc_pc   = 1'b1 ;  //para que se habilite R_pc y en el sig ciclo se habilite Y
+                sel_y    = 2'b01;  //
+                modo_alu = 2'b00;  //modo suma
+            end
+            DECODIFICA: ;          //Mantengo los valores por defecto y espero un ciclo para que se carguen los registros
+            DIRECCION: 
+                case(op)
+                //los que no hacen nada
+                19,23,51,55: ;
+                //Para los que acceden a memoria
+                3,103: begin                   //instruccion 3 y 103 tipo I
+                    sel_inmediato = 3'b000;    //selecciono el tipo I
+                    sel_op2       =  2'b01;    //valor inmediato
+                    sel_op1       =  2'b10;    //selecciono Rs1
+                    modo_alu      =  2'b00;    //modo suma
+                end
+                35: begin                      //instruccion 35 tipo S
+                    sel_inmediato = 3'b001;    //selecciono el tipo S
+                    sel_op2       =  2'b01;    //valor inmediato
+                    sel_op1       =  2'b10;    //selecciono Rs1
+                    modo_alu      =  2'b00;    //modo suma
+                end
+                99: begin                       //instruccion 99 tipo B
+                    sel_inmediato = 3'b010;    //selecciono el tipo B
+                    sel_op2       = 2'b01;     //valor inmediato
+                    sel_op1       =  2'b01;    //valor actual
+                    modo_alu      =  2'b00;    //modo suma
+                end
+                111: begin                      //instruccion 111 tipo J
+                    sel_inmediato = 3'b100;    //selecciono el tipo J
+                    sel_op2       =  2'b01;    //valor inmediato
+                    sel_op1       =  2'b01;    //valor actual
+                    modo_alu      =  2'b00;    //modo suma 
+                end
+                endcase
+            MEMORIA_EJECUTA:
+                case(op)
+                3 : begin                       //instruccion 3 tipo B, acceso a memoria
+                    sel_y   = 2'b10;            //para tener la direccion del ciclo retardado    
+                    sel_dir = 1'b1;             //seleccion el resultado que habia quedado en sel_y y no el PC
+                                                // espero un ciclo para que lea al estar en la direccion
+                end  
+                35 : begin                      //acceso a memoria
+                    sel_y   = 2'b10;            //para tener la direccion del ciclo retardado
+                    sel_dir = 1'b1; 
+                    esc_mem = 1'b1;             //para habilitar el acceso a memoria, 
+                end                             //el dat_escritura esta en dat_2 es RS2 porque ya esta cableado directo
+                99: begin                       //actualiza el pc, no siempre actualizan el PC necesita de la ALU
+                    sel_y = 2'b10;
+                                                //habilita el PC si z_branchi es igual a Z (XNOR)
+                    branch = 1;
+                    sel_op1  = 2'b10;           //este va a la ALU
+                    sel_op2  = 2'b00;           //este va a la ALU
+                    modo_alu = 2'b11;           //instruccion 99
+                end
+                19: begin                       //instruccion 19 tipo I, Modo especial
+                    sel_inmediato = 3'b000;     //selecciono el tipo I
+                    sel_op2  = 2'b01;           //salida del valor inmediato
+                    sel_op1  = 2'b10;           //Rs1
+                    modo_alu = 2'b01;           
+                end 
+                51: begin                       //instruccion 51 tipo S
+                    sel_op2  = 2'b00;           //RS2
+                    sel_op1  = 2'b10;           //RS1
+                    modo_alu = 2'b10;
+                end   
+                23: begin                      //instruccion 23 tipo U
+                    sel_inmediato = 3'b011;    //selecciono el tipo U
+                    sel_op1       = 2'b01;     //pc_inst
+                    sel_op2       = 2'b01;     //valor inmediato
+                    modo_alu      = 2'b00;     //modo suma
+                end   
+                55: begin                      //intruccion 55 tipo U
+                    sel_inmediato = 3'b011;    //selecciono el tipo U
+                    sel_op1       = 2'b11;     //valor 0
+                    sel_op2       = 2'b01;     //valor inmediato
+                    modo_alu      = 2'b00;     //modo suma
+                end   
+                103,111: begin
+                    sel_y    = 2'b10;          //la salida de la ALU del ciclo anterior
+                    esc_pc   = 1'b1;           //para habilitar escritura en PC
+                    sel_op2  = 2'b10;          //es la suma de 4
+                    sel_op1  = 2'b01;          //valor anterior,calcula la direccion sig y lo guarda
+                    modo_alu = 2'b00;          //suma
+                end
+                endcase
+            ESCRIBE:
+                case(op)
+                19,23,51,55,103,111 : begin
+                   sel_y   = 2'b10;             //salida retardada
+                   esc_reg = 1'b1;              //habilitacion, guarda el valor del paso anterior de la ALU en el reg de destino
+                end
+                3: begin
+                   sel_y   = 2'b00;
+                   esc_reg = 1'b1; 
+                end
+                endcase
+            endcase
+        end
 endmodule
